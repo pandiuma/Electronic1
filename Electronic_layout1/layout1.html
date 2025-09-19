@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electronic and Gadgets Website</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+    <style>
+        .nav-link {
+            position: relative;
+            transition: color 0.3s;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: yellow;
+            transition: width 0.3s;
+        }
+
+        .nav-link:hover::after {
+            width: 100%;
+
+
+        }
+
+        .nav-link:hover {
+            color: yellow;
+        }
+
+        .offer-section h4 .text-uppercase {
+            .black-ops-one-regular {
+                font-family: "Black Ops One", system-ui;
+                font-weight: 400;
+                font-style: normal;
+            }
+
+        }
+
+        .footer .a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top mb-4 navbar-custom" data-bs-theme="dark"
+        style="background-color: #001f3f; padding: 30px">
+        <img src="images/technova.jpg" class="img w-10" alt="Technova">
+        <div class="container d-flex  justify-content-between-evenly align-items-center s px-3">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse " id="navbarNavDropdown">
+                <ul class="navbar-nav" style="font-size: 30px;  justify-content-between; text-align: center">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="homepage.html" aria-current="page" href="layout1.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" id="aboutpage.html" aria-current="page" href="about.html">About
+                            us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" id="shoppage.html" aria-current="page" href="shop.html">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" id="blogpage.html" aria-current="page" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" id="contactpage.html" aria-current="page"
+                            href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="collapse navbar-collapse d-flex gap-2 " id="navbarIcons">
+                <ul class="navbar-nav ms-auto ">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="cardpage.html" aria-current="page" href="card.html"><i
+                                class='bx bx-cart-add' style="color:white; font-size: 35px"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" id="whislistpage.html" aria-current="page" href="whislist.html"><i
+                                class='bx bx-heart' style="color:white; font-size: 35px"></i></a>
+                    </li>
+                </ul>
+
+                <a href="button.html" class="btn btn-info btn-outline-success p-2" role="button"
+                    style="background-color:yellow; border-radius: 25px; width: 150px; font-size: 30px; color: black; font-weight: bold">Login</a>
+            </div>
+        </div>
+    </nav>
+    <section id="banner"
+        class="bg-light text-black d-flex align-items-center justify-content-center border border-secondary shadow p-3"
+        style="height: 100vh;
+      padding-top:70px; background: linear-gradient(to right, #f2f2f2, #ccc); padding: 20px;margin: 30px; margin-top: 50px; position: relative;">
+
+        <div class="call-now col-md-1" style="position: absolute; right: 200px; top: 200px; color:navy;">
+            Call on: <span class="num" style="font-weight: bold; font-size: 1em;">9876565239</span>
+        </div>
+
+
+        <div class="product-banner" style="position: absolute;left: 100px; top: 150px;">
+            <div class="row g-1 d-flex align-items-start">
+                <img src="images/techno.jpg" alt="techno">
+            </div>
+
+
+        </div>
+
+        <div class="floating-logo" style="position: absolute;left: 200px; top: 700px;">
+            <img src="images/logo.jpg" alt="logo">
+        </div>
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-3 product-item">
+                    <img src="images/cuisinart_banner_website 1.jpg" alt="Waffle Maker" class="product-img">
+                </div>
+            </div>
+
+
+            <div class="offer-section" style="position: absolute; right: 200px;">
+                <h4 class="text-uppercase" style="color: navy; font-size: 30px; text-align: end;">Tech Nova</h4>
+                <p class=" offer-highlight" style="color: navy; font-size: 20px; text-align: end;">Welcome You All To
+                </p>
+                <p class="text-uppercase" style="color: navy; font-weight: bold;font-size: 30px; text-align: end;">50%
+                    Offer For Electronics</p>
+                <p class="offer-date"
+                    style="border: #001f3f; background-color: #001f3f; color: white; padding: 20px; text-align: center; font-size: 20px; font-weight: bold;">
+                    Date: 19th - 23rd May</p>
+                <p class="text-uppercase" style="color: navy; font-weight: bold;font-size: 30px; text-align: end;">Offer
+                    available in fue dates</p>
+
+            </div>
+
+            <div>
+                <img src="images/dots.jpg" class="dots" style="position: absolute; bottom: 200px; left:10px;">
+            </div>
+            <div>
+                <button class="btn"
+                    style="position: absolute; left: 400px; bottom: 100px; background-color: rgb(205, 205, 68); padding: 20px 30px; border-radius: 25px; font-weight: bold; font-size: 20px;">VIEW
+                    MORE</button>
+
+            </div>
+            <div class="container text-center">
+                <div class="row"
+                    style="position: absolute; bottom: 0; left:10px; background-color:#001f3f; color: white; width: 1829px; padding: 25px; font-weight: bold; font-size: 20px;">
+                    <div class="col">HEAVY DIACOUNT</div>
+                    <div class="col"> FINANCE AVAILABLE </div>
+                    <div class="col">EXCHANGE OFFER</div>
+                </div>
+            </div>
+    </section>
+
+    <section id="gadgets" class="bg-light d-flex align-items-center justify-content-center" style=" height: 100vh;">
+        <h1 class="h1"
+            style="color: black; position: absolute; top: 1100px; font-weight: bold; padding: 30px; font-size: 50px;">
+            Global
+            Gadgets :
+            Trending Products</h1>
+
+        <div class="container-fluid text-bg-warning p-3 position-absolute w-100 " style=" height: 350px;">
+            <div class="row g-4" style=" padding: 20px;">
+                <div class="col-12 col-md-3 mb-4">
+                    <img src="images/Pasta_maker_1 1.jpg" class="img-fluid" style="width: 350px;" alt="Pastamaker">
+                </div>
+                <div class="col-12 col-md-3 mb-4">
+                    <img src="images/icecream_maker.jpg" class="img-fluid" style="width: 350px;" alt="Icecreammaker">
+                </div>
+                <div class="col-12 col-md-3 mb-4">
+                    <img src="images/cuisinart_waffle_maker 1.jpg" class="img-fluid" style="width: 350px;" alt="Wafflemaker">
+                </div>
+                <div class="col-12 col-md-3 mb-4">
+                    <img src="images/Pizza_maker 1.jpg" class="img-fluid" style="width: 350px;" alt="Pizamaker">
+                </div>
+            </div>
+        </div>
+        <div class="container" style=" position:absolute; top:1800px;">
+            <div class="row g-3">
+                <div class="col mb-4 col-md-3">
+                    <p class="text-uppercase" style="color: navy; font-size: 33px; font-weight: bold;"> <i
+                            class='bx bxs-bus'></i>Free Shipping</p>
+                    <p class="text-uppercase" style="color: navy; font-size: 25px;">FREE SHIPPING ON ALL ORDER</p>
+                </div>
+                <div class="col">
+                    <P class="text-uppercase" style="color: navy; font-size: 33px; font-weight: bold;"><i
+                            class='bx bx-money'></i>Money back guarantee</P>
+                    <P class="text-uppercase" style="color: navy; font-size: 25px;">100% MONEY BACK GUARANTEE</P>
+                </div>
+                <div class="col">
+                    <P class="text-uppercase" style="color: navy; font-size: 33px; font-weight: bold;"> <i
+                            class='bx bxs-quote-single-left'></i>Online support</P>
+                    <P class="query" style="color: black; font-size: 25px;">Reach to us with any query</P>
+                </div>
+            </div>
+
+
+    </section>
+    <section id="gadgets" class="bg-light d-flex align-items-center justify-content-center" style=" height: 100vh;">
+
+        <h1 class="h1"
+            style="color: black; position: absolute; top: 2000px; font-weight: bold; padding: 30px; font-size: 50px;">
+            Exclusive Products</h1>
+
+        <div class="container-fluid mt-4  position-absolute "
+            style=" background-color: #001f3f; height: 600px; margin: 20px; padding: 20px;">
+            <div class="row mb-4 g-4">
+                <div class="col-md-3 col-6">
+                    <img src="images/citiz_and_milk_exclusive 1.jpg" class="img-fluid" style="width: 350px;" alt="Coffeemaker">
+                </div>
+                <div class="col-md-3 col-6">
+                    <img src="images/cera_plus 1.jpg" class="img-fluid" style="width: 350px;" alt="Ceracoffeemaker">
+                </div>
+                <div class="col-md-3 col-6">
+                    <img src="images/CUISINART_220V_PROFESSIONAL 1.jpg" class="img-fluid" style="width: 350px;" alt="Icecream">
+                </div>
+                <div class="col-md-3 col-6">
+                    <img src="images/Dual_Zone_Air_Fryer 1.jpg" class="img-fluid" style="width: 350px;" alt="AirFryer">
+                </div>
+            </div>
+
+            <div class="row mb-4 g-4">
+                <div class="col-md-3 col-6">
+                    <img src="images/coffeemaker.jpg" class="img-fluid" style="width: 350px;" alt="Coffeemaker">
+                </div>
+                <div class="col-md-3 col-6">
+                    <img src="images/Pizza_maker 1.jpg" class="img-fluid" style="width: 350px;" alt="Pizzamaker">
+                </div>
+                <div class="col-md-3 col-6">
+                    <img src="images/yogurt_maker_b 1.jpg" class="img-fluid" style="width: 350px;" alt="Yogurtmaker">
+                </div>
+                <div class="col-md-3 col-6">
+                    <img src="images/vanilla_ice_cream 1.jpg" class="img-fluid" style="width: 350px;" alt="Icecreammaker">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="customer_questions" class="bg-light  " style=" height: 100vh;">
+        <h1 class="h1 "
+            style="color: black; position: absolute; top: 3000px; font-weight: bold; padding: 30px; font-size: 50px; align-content: center; left: 500px;">
+            Customer's common question</h1>
+
+        <div class="row" style="top: 0px;">
+            <p class="header" style="color: black; font-weight: bold; font-size: 30px;">1.What types of products do you
+                sell?</p>
+            <p class="text" style="color: black; font-size: 30px;"> We specialize in a wide range of smart electronics
+                and innovative gadgets, including smart home devices, wearables, moblie accessories, wireless chargers,
+                security systems, and more.</p>
+        </div>
+        <hr class="w-50 w-md-50 mx-auto">
+        <div class="row" style="top: 0px;">
+            <p class="header" style="color: black; font-weight: bold; font-size: 30px;">2.Are your products compatible
+                with Alexa, Google Home, or Apple Homekit? </p>
+            <p class="text" style="color: black; font-size: 30px;">Many of our smart home products are compatible with
+                popular ecosystems like Amazon Alexa, Google Assistant, and Apple Homekit. Please check each product's
+                description for specific compatibility details.</p>
+        </div>
+        <hr class="w-50 w-md-50 mx-auto">
+        <div class="row" style="top: 0px;">
+            <p class="header" style="color: black; font-weight: bold; font-size: 30px;">3. Do you offer warranties on
+                your products?</p>
+            <p class="text" style="color: black; font-size: 30px;"> Yes! Most of our products come with a standard 6-12
+                month manufacturer's warranty. Some products may have extended warranties-details are available on the
+                product page.</p>
+        </div>
+        <hr class="w-50 w-md-50 mx-auto">
+        <div class="row" style="top: 0px;">
+            <p class="header" style="color: black; font-weight: bold; font-size: 30px;">4.How can i track my order?</p>
+            <p class="text" style="color: black; font-size: 30px;"> Once your order is shipped, you "ll receive a
+                confirmation email with a tracking number and link. You can also log in to your account on our website
+                to track your order anytime.</p>
+        </div>
+        <hr class="w-50 w-md-50 mx-auto">
+        <div class="row" style="top: 0px;">
+            <p class="header" style="color: black; font-weight: bold; font-size: 30px;">5. How long does shipping take?
+            </p>
+            <p class="text" style="color: black; font-size: 30px;"> We offer fast and reliable shipping. Most orders are
+                processed within 1-2 bussiness days. Delivery times vary by location but typically range from 3-7
+                business days.</p>
+        </div>
+        <hr class="w-50 w-md-50 mx-auto">
+        <div class="row" style="top: 0px;">
+            <p class="header" style="color: black; font-weight: bold; font-size: 30px;">6. Do you ship internationally?
+            </p>
+            <p class="text" style="color: black; font-size: 30px;">Yes, we ship to many countries worldwide.
+                International shipping rates and times vary depending on destination and package weight.</p>
+        </div>
+        <hr class="w-50 w-md-50 mx-auto">
+        <div class="row" style="top: 0px;">
+            <p class="header" style="color: black; font-weight: bold; font-size: 30px;">7. What is your return policy?
+            </p>
+            <p class="text" style="color: black; font-size: 30px;">If you're not satisfied with your purchase, you can
+                return most item within 30 days of delivery for a full refund or exchange. Items must be unused and in
+                original packaging. Check our Return Policy page for full details.</p>
+        </div>
+        <hr class="w-50 w-md-50 mx-auto">
+        <div class="row" style="top: 0px;">
+            <p class="header" style="color: black; font-weight: bold; font-size: 30px;">8. How can I contact customer
+                support?</p>
+            <p class="text" style="color: black; font-size: 30px;"> You can reach us anytime through our Contact Us page
+                or by emailing [support@yourbrand.com]. We usually respond within 24 hours on business days.</p>
+        </div>
+        <hr class="w-50 w-md-50 mx-auto">
+        <div class="row" style="top: 0px;">
+            <p class="header" style="color: black; font-weight: bold; font-size: 30px;">9. Are your gadgets safe to use?
+            </p>
+            <p class="text" style="color: black; font-size: 30px;"> Absolutely. All our products are tested and
+                certified for safety and performance. We source only from trusted manufacturers who meet international
+                standards.</p>
+        </div>
+        <hr class="w-50 w-md-50 mx-auto">
+        </div>
+
+
+        <section id="brand_section" class="bg-light " style=" height: 100vh;">
+            <div class="container text-center my-4">
+                <div class="row justify-content-center align-items-center g-4">
+                    <div class="col-auto"><img src="images/delonghi.jpg" alt="DeLonghi" width="100px" height="100px"></div>
+                    <div class="col-auto"><img src="images/devialet.jpg" alt="Devialet" width="100px" height="100px"></div>
+                    <div class="col-auto"><img src="images/dell.jpg" alt="Dell" width="100px" height="100px"></div>
+                    <div class="col-auto"><img src="images/Cuisinart.jpg" width="100px" alt="Cuisinart" height="100px"></div>
+                    <div class="col-auto"><img src="images/gferrai.jpg" alt="GFerrari" width="100px" height="100px"></div>
+                    <div class="col-auto"><img src="images/Bose.jpg" alt="Bose" width="100px" height="100px"></div>
+                    <div class="col-auto"><img src="images/hp.jpg" alt="HP" width="100px" height="100px"></div>
+                </div>
+            </div>
+
+
+
+
+            <div class="container bg-light py-5 text-center">
+                <h2 class="fw-bold" style="color: #001f3f; font-size: 40px; font-weight: bold;">Weekly Newsletter</h2>
+                <p class="text-muted" style="color: #001f3f; font-size: 30px;">Join Our Community And Never Miss An
+                    Update.</p>
+                <div class="mx-auto" style="max-width: 500px;">
+                    <div class="input-group ">
+                        <input type="email" class="form-control rounded-start shadow p-4 mb-5 bg-body-tertiary rounded "
+                            style="font-size: 25px; width: 200px; border-radius: 25px;" placeholder="enter mail id">
+                        <button class="btn btn-outline-success p-2"
+                            style="background-color:yellow; border-radius: 25px; width: 200px; height: 100px;  font-size: 25px; color: black; font-weight: bold"
+                            type="submit">subscribe</button>
+                    </div>
+                </div>
+            </div>
+
+            <footer class="footer py-5 text-white" style="background-color: #001f3f">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-2 mb-4">
+                            <h5><img src="images/technova.jpg" alt="Tech Nova" width="100px" height="100px"></h5>
+                            <p class="small">"GADGETS REFINED. QUALITY DEFINED."</p>
+                        </div>
+
+                        <div class="col-md-2 mb-4">
+                            <h6 class="fw-bold" style="color: white; text-decoration: none; font-size: 25px;">Our Store
+                            </h6>
+                            <ul class="list-unstyled">
+                                <li><a class="a" style="color: white; text-decoration: none; font-size: 25px;"
+                                        href="#">Contact Us</a></li>
+                                <li><a class="a" style="color: white; text-decoration: none; font-size: 25px;"
+                                        href="#">About Us</a></li>
+                                <li><a class="a" style="color: white; text-decoration: none; font-size: 25px;"
+                                        href="#">Shipping & Delivery</a></li>
+                                <li><a class="a" style="color: white; text-decoration: none; font-size: 25px;"
+                                        href="#">FAQ's</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-md-2 mb-4">
+                            <h6 class="fw-bold" style="color: white; text-decoration: none; font-size: 25px;">Legal</h6>
+                            <ul class="list-unstyled">
+                                <li><a class="a" style="color: white; text-decoration: none; font-size: 25px;"
+                                        href="#">Privacy Policy</a></li>
+                                <li><a class="a" style="color: white; text-decoration: none; font-size: 25px;"
+                                        href="#">Terms & Condition</a></li>
+                                <li><a class="a" style="color: white; text-decoration: none; font-size: 25px;"
+                                        href="#">Return & Exchange</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-md-2 mb-4">
+                            <h6 class="fw-bold" style="color: white; text-decoration: none; font-size: 25px;">Contact
+                            </h6>
+                            <p class="p" style="color: white; text-decoration: none; font-size: 25px;"><i
+                                    class='bx bx-location-plus'></i>36, Ramakrishnapuram, Thindugal-657 984</p>
+                            <p class="p" style="color: white; text-decoration: none; font-size: 25px;"><i
+                                    class='bx bx-phone'></i>89378 64789, 64784 56483</p>
+                            <p class="p" style="color: white; text-decoration: none; font-size: 25px;"><i
+                                    class='bx bx-envelope'></i>Technova@Electronis.In</p>
+                            <div class="mt-2">
+                                <a href="#" class="me-2 text-white"><i class="bi bi-instagram fs-5"></i></a>
+                                <a href="#" class="me-2 text-white"><i class="bi bi-facebook fs-5"></i></a>
+                                <a href="#" class="text-white"><i class="bi bi-google fs-5"></i></a>
+                            </div>
+                        </div>
+
+                        <div class="col-md-2 mb-4">
+                            <h6 class="fw-bold" style="color: white; text-decoration: none; font-size: 25px;"> Follow Us
+                            </h6>
+                            <i class='bx bxl-instagram-alt' style="font-size: 40px;"></i>
+                            <i class='bx bxl-facebook-circle' style="font-size: 40px;"></i>
+                            <i class='bx bxl-google-plus-circle' style="font-size: 40px;"></i>
+
+                        </div>
+                    </div>
+
+                    <p class="text-start mb-0 small" style="color: white; font-size: 20px;">&copy; Copyright © TECH
+                        NOVA. All Rights Reserved.</p>
+                </div>
+            </footer>
+        </section>
+
+
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
